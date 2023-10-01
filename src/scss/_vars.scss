@@ -1,0 +1,19 @@
+$default: #121212;
+$bg: rgba(192, 191, 191, 0.22);
+$border: #2d2d2d;
+$button_1: #26489c;
+$error: #ed0006;
+$btn: #094e91;
+
+$btn_bg: #e6edf3;
+$gray_text: #9ea1aa;
+
+$breakpoints: (
+  XS: 428px,
+  SM: 768px,
+  MD: 1024px,
+  LG: 1170px,
+  XL: 1440px,
+  XXL: 1920px,
+  XXXL: 2560px,
+);

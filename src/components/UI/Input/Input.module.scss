@@ -1,0 +1,113 @@
+@import '../../../scss/app.scss';
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.error {
+  margin-left: 10px;
+  color: $error;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+  @include LG {
+    font-size: 9px;
+    line-height: 14px;
+  }
+  @include XS {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
+.message {
+  margin-left: 10px;
+  color: $btn;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 20px;
+  @include LG {
+    font-size: 9px;
+    line-height: 14px;
+  }
+  @include XS {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
+.input {
+  padding: 10px 10px 10px 23px;
+  border-radius: 12px;
+  border: 0.6px solid $btn_bg;
+  box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+  outline: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  &:focus {
+    border: 0.6px solid $btn;
+  }
+  @include MD {
+    font-size: 16px;
+  }
+  @include XS {
+    padding: 5px 5px 5px 23px;
+    font-size: 12px;
+  }
+}
+
+.errorInput {
+  border: 0.6px solid $error;
+}
+
+.placeholder {
+  position: absolute;
+  bottom: 10px;
+  left: 23px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $gray_text;
+  pointer-events: none;
+  span {
+    color: $error;
+    pointer-events: none;
+  }
+  @include MD {
+    font-size: 16px;
+  }
+  @include XS {
+    font-size: 12px;
+    bottom: 3px;
+  }
+}
+
+.errorPlaceholder {
+  position: absolute;
+  bottom: 30px;
+  left: 23px;
+  color: $error;
+  @include XS {
+    bottom: 15px;
+  }
+}
+
+.error .e {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+  background-color: white;
+}

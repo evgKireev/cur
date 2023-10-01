@@ -1,0 +1,111 @@
+@import '../../../scss/app.scss';
+
+.wrap {
+  border-radius: 30px;
+  border: 0.5px solid #bfc1c8;
+  background: #fff;
+  box-shadow: 0px 8px 24px -4px rgba(24, 39, 75, 0.08),
+    0px 6px 12px -6px rgba(24, 39, 75, 0.12);
+  padding: 40px 80px;
+  @include MD {
+    padding: 25px 40px;
+  }
+  @include XS {
+    padding: 15px 20px;
+  }
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  @include MD {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  @include XS {
+    gap: 5px;
+    margin-bottom: 13px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.435);
+  margin-bottom: 10px;
+  @include SM {
+    font-size: 15px;
+  }
+}
+
+.checkInfoInner {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include MD {
+    font-size: 16px;
+    line-height: 24px;
+    gap: 8px;
+  }
+  @include XS {
+    font-size: 14px;
+    line-height: 21px;
+    gap: 4px;
+  }
+}
+
+.checkTotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  @include MD {
+    gap: 10px;
+  }
+  @include XS {
+    gap: 5px;
+  }
+}
+
+.total {
+  color: #000;
+  font-size: 50px;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: 500;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  @include SM {
+    font-size: 24px;
+  }
+  @include MD {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  @include XS {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.for {
+  width: 90%;
+}
+
+.innerBtn {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
