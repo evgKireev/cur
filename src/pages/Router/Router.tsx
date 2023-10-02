@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 
 import { Home } from '../importFilePages'
 
@@ -8,14 +8,14 @@ export enum PathNames {
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path={PathNames.Home}
           element={<Home />}
         ></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
