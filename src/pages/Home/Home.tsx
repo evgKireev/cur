@@ -44,6 +44,7 @@ const Home = () => {
 
   const onSubmit: SubmitHandler<ProjectType> = () => {
     setCheckInformation(true)
+    window.scrollTo({ top: 99999, left: 0, behavior: 'smooth' })
   }
 
   const checkSum = () => {
